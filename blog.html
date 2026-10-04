@@ -496,6 +496,14 @@
     .hero h1 .line > span{transform:none;}
   }
 
+  .overlay-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px;opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .8s var(--ease-out);}
+  body.menu-open .overlay-cta{opacity:1;transform:none;transition-delay:.6s;}
+  .overlay-cta .btn{flex:1 1 auto;}
+  .overlay-cta .ov-est{background:#E4C48F;color:var(--walnut);border-color:#E4C48F;font-weight:500;}
+  .overlay-cta .ov-est::before{background:var(--linen);}
+  .overlay-cta .ov-est:hover{color:var(--walnut);border-color:var(--linen);}
+  .overlay-cta .ov-wa{color:var(--linen);border-color:rgba(242,236,222,.4);}
+
   /* ===== Sub-page shared ===== */
   .nav-links a.current::after{transform:scaleX(1);}
   .nav-links a.current{color:var(--brass);}
@@ -633,6 +641,7 @@
       <a href="projects.html">Projects</a>
       <a href="blog.html" class="current" aria-current="page">Journal</a>
       <a href="index.html#faq">FAQ</a>
+      <a href="https://calculator.woodnco.in">Cost calculator</a>
     </div>
     <div class="nav-cta"><a href="index.html#contact" class="btn">Book a consultation</a></div>
     <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
@@ -646,6 +655,10 @@
   <a class="big" href="blog.html"><span>Journal</span></a>
   <a class="big" href="index.html#faq"><span>FAQ</span></a>
   <a class="big" href="index.html#contact"><span>Contact</span></a>
+  <div class="overlay-cta">
+    <a href="https://calculator.woodnco.in" class="btn ov-est">Get a free cost estimate</a>
+    <a href="https://wa.me/918747809064" class="btn ov-wa">WhatsApp us</a>
+  </div>
   <div class="overlay-foot">
     <a href="tel:+918747809064">+91 87478 09064</a>
     <a href="mailto:woodandco.blr@gmail.com">woodandco.blr@gmail.com</a>
